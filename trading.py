@@ -1,11 +1,13 @@
 import alpaca_trade_api as alpaca
 import requests
 import asyncio
-import config
+from config import API_KEY, SECRET_KEY
 
 ALPACA_BASE_URL = 'https://paper-api.alpaca.markets'
 DATA_URL = 'https://data.alpaca.markets'
-rest_api = alpaca.REST(config.API_KEY, config.SECRET_KEY, ALPACA_BASE_URL)
+rest_api = alpaca.REST(API_KEY, SECRET_KEY, ALPACA_BASE_URL)
+HEADERS = {'APCA-API-KEY-ID': API_KEY,
+           'APCA-API-SECRET-KEY': SECRET_KEY}
 
 # wait time between trades
 waitTime = 3
