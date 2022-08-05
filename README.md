@@ -9,5 +9,8 @@ This bot trades the ETH/USD, BTC/USD, and ETH/BTC pairs using the alpaca API imp
     - pip install requests
     - pip install ipykernel
 2. Create a config.py file with the following information:
-    -  API_KEY = ""
+    -  
+    '''
+    API_KEY = ""
     SECRET_KEY = ""
+    '''
