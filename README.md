@@ -8,8 +8,8 @@ This bot trades the ETH/USD, BTC/USD, and ETH/BTC pairs using the alpaca API imp
     - pip install asyncio
     - pip install requests
     - pip install ipykernel
-- Create a config.py file with the following information:
-    -  
+-  Create a config.py file with the following information:
+    -   
     ```
     
     API_KEY = ""
